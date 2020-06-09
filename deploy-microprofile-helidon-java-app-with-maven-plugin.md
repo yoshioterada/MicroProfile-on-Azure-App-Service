@@ -97,7 +97,7 @@ In this section, you will configure the Helidon project `pom.xml` so that Maven 
 
 2. In the `<build>` section of the pom.xml, add the following `<plugin>` entry inside the `<plugins>` tag.
 
-   ```xml
+```xml
   <build>
     <finalName>helidon-hello-azure</finalName>
     <plugins>
@@ -108,7 +108,7 @@ In this section, you will configure the Helidon project `pom.xml` so that Maven 
       </plugin>
     </plugins>
   </build>
-   ```
+```
 
 3. Then you can configure the deployment, run the following maven command in the Command Prompt and use the **number** to choose these options in the prompt:
     
