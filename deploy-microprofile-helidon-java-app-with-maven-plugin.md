@@ -22,7 +22,7 @@ To complete the steps in this tutorial, you'll need to have the following instal
 
 * The [Azure CLI](/cli/azure/), either locally or through [Azure Cloud Shell](https://shell.azure.com).
 * A supported Java Development Kit (JDK). For more information about the JDKs available for use when developing on Azure, see <https://aka.ms/azure-jdks>.
-* Apache's [Maven](https://maven.apache.org/), Version 3).
+* Apache [Maven](https://maven.apache.org/), Version 3.
 
 ## Install and sign in to Azure CLI
 
