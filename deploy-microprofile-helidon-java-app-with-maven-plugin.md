@@ -1,5 +1,5 @@
 ---
-title: Deploy a Helidon Web App to Azure App Service on Linux
+title: Deploy a Helidon Web App to Azure App Service with Maven
 description: Learn how to deploy a Helidon App to App Service on Linux using the Maven Plugin for Azure Web App.
 services: app-service
 documentationcenter: java
@@ -10,7 +10,7 @@ ms.custom:
 #Customer intent: As a Java developer, I want to deploy MicroProfile apps to Azure so that I don't have to deal with app server configuration and management.
 ---
 
-# Deploy a Helidon app to Azure App Service with Maven and Azure on Linux
+# Deploy a Helidon Web App to Azure App Service with Maven
 
 In this quickstart, you'll use the [Maven Plugin for Azure App Service Web Apps](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme) to deploy a Helidon application to [Azure App Service on Linux](/azure/app-service/containers/). You'll want to choose Java SE deployment over [Tomcat and WAR files](/azure/app-service/containers/quickstart-java) when you want to consolidate your app's dependencies, runtime, and configuration into a single deployable artifact.
 
