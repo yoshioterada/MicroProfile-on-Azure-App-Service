@@ -161,7 +161,7 @@ Confirm (Y/N)? : y
 [INFO] ------------------------------------------------------------------------
    ```
 
-4. Add the `<appSettings>` section to the `<configuration>` section of `PORT`,  `WEBSITES_PORT` and `WEBSITES_CONTAINER_START_TIME_LIMIT`. And add the `<include>/libs/*.jar</include>` to recrouces in deployment?
+4. Add the `<appSettings>` section to the `<configuration>` section of `PORT`,  `WEBSITES_PORT` and `WEBSITES_CONTAINER_START_TIME_LIMIT`. And add the `<include>/libs/*.jar</include>` to the resources in deployment.
 
    ```xml
       <plugin> 
