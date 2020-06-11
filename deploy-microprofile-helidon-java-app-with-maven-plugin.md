@@ -45,14 +45,14 @@ In this section, you will create a Helidon application and test it locally.
 
 1. Input or Select the field like follows.  
 
-|  Input Field  |  Input/Select Value  |
-| ---- | ---- |
-|  groupId  |  com.microsoft.azure.samples.helidon  |
-|  artifactId  |  helidon-hello-azure  |
-|  MicroProfile Version  |  MP 3.2  |
-|  Java SE Version  |  Javav 11  |
-|  MicroProfile Runtime  |  Helidon  |
-|  Examples for Specifications  |  Metrics, OpenAPI  |
+	|  Input Field  |  Input/Select Value  |
+	| ---- | ---- |
+	|  groupId  |  com.microsoft.azure.samples.helidon  |
+	|  artifactId  |  helidon-hello-azure  |
+	|  MicroProfile Version  |  MP 3.2  |
+	|  Java SE Version  |  Javav 11  |
+	|  MicroProfile Runtime  |  Helidon  |
+	|  Examples for Specifications  |  Metrics, OpenAPI  |
 
 1. Download the project  
 Push the `DOWNLOAD` button.
@@ -97,18 +97,18 @@ In this section, you will configure the Helidon project `pom.xml` so that Maven 
 
 2. In the `<build>` section of the pom.xml, add the following `<plugin>` entry inside the `<plugins>` tag.
 
-```xml
-  <build>
-    <finalName>helidon-hello-azure</finalName>
-    <plugins>
-      <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.9.1</version>
-      </plugin>
-    </plugins>
-  </build>
-```
+	```xml
+	  <build>
+	    <finalName>helidon-hello-azure</finalName>
+	    <plugins>
+	      <plugin>
+	        <groupId>com.microsoft.azure</groupId>
+	        <artifactId>azure-webapp-maven-plugin</artifactId>
+	        <version>1.9.1</version>
+	      </plugin>
+	    </plugins>
+	  </build>
+	```
 
 3. Then you can configure the deployment, run the following maven command in the Command Prompt and use the **number** to choose these options in the prompt:
     
@@ -116,49 +116,49 @@ In this section, you will configure the Helidon project `pom.xml` so that Maven 
    mvn azure-webapp:config
    ```
 Options Parameter:  
+	
+	|  Inpungt Field  |  Input/Select Value  |
+	| ---- | ---- |
+	|  Define value for OS(Default: Linux):  | 1. linux  |
+	|  Define value for javaVersion(Default: Java 8):   | 1. Java 11  |
+	|  Confirm (Y/N) | y |
 
-|  Inpungt Field  |  Input/Select Value  |
-| ---- | ---- |
-|  Define value for OS(Default: Linux):  | 1. linux  |
-|  Define value for javaVersion(Default: Java 8):   | 1. Java 11  |
-|  Confirm (Y/N) | y |
-
-You can configure with the following command:
+	You can configure with the following command:
 
    ```cmd
-$ mvn azure-webapp:config
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ------< com.microsoft.azure.samples.helidon:helidon-hello-azure >-------
-[INFO] Building helidon-hello-azure 1.0-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- azure-webapp-maven-plugin:1.9.1:config (default-cli) @ helidon-hello-azure ---
-Define value for OS(Default: Linux): 
-1. linux [*]
-2. windows
-3. docker
-Enter index to use: 
-Define value for javaVersion(Default: Java 8): 
-1. Java 11
-2. Java 8 [*]
-Enter index to use: 1
-Please confirm webapp properties
-AppName : helidon-hello-azure-1591663020899
-ResourceGroup : helidon-hello-azure-1591663020899-rg
-Region : westeurope
-PricingTier : PremiumV2_P1v2
-OS : Linux
-RuntimeStack : JAVA 11-java11
-Deploy to slot : false
-Confirm (Y/N)? : y
-[INFO] Saving configuration to pom.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  17.452 s
-[INFO] Finished at: 2020-06-09T09:37:12+09:00
-[INFO] ------------------------------------------------------------------------
+	$ mvn azure-webapp:config
+	[INFO] Scanning for projects...
+	[INFO] 
+	[INFO] ------< com.microsoft.azure.samples.helidon:helidon-hello-azure >-------
+	[INFO] Building helidon-hello-azure 1.0-SNAPSHOT
+	[INFO] --------------------------------[ jar ]---------------------------------
+	[INFO] 
+	[INFO] --- azure-webapp-maven-plugin:1.9.1:config (default-cli) @ helidon-hello-azure ---
+	Define value for OS(Default: Linux): 
+	1. linux [*]
+	2. windows
+	3. docker
+	Enter index to use: 
+	Define value for javaVersion(Default: Java 8): 
+	1. Java 11
+	2. Java 8 [*]
+	Enter index to use: 1
+	Please confirm webapp properties
+	AppName : helidon-hello-azure-1591663020899
+	ResourceGroup : helidon-hello-azure-1591663020899-rg
+	Region : westeurope
+	PricingTier : PremiumV2_P1v2
+	OS : Linux
+	RuntimeStack : JAVA 11-java11
+	Deploy to slot : false
+	Confirm (Y/N)? : y
+	[INFO] Saving configuration to pom.
+	[INFO] ------------------------------------------------------------------------
+	[INFO] BUILD SUCCESS
+	[INFO] ------------------------------------------------------------------------
+	[INFO] Total time:  17.452 s
+	[INFO] Finished at: 2020-06-09T09:37:12+09:00
+	[INFO] ------------------------------------------------------------------------
    ```
 
 4. Add the `<appSettings>` section to the `<configuration>` section of `PORT`,  `WEBSITES_PORT` and `WEBSITES_CONTAINER_START_TIME_LIMIT`. And add the `<include>/libs/*.jar</include>` to recrouces in deployment?
@@ -170,7 +170,7 @@ Confirm (Y/N)? : y
         <version>1.9.1</version>  
         <configuration>
           <schemaVersion>V2</schemaVersion>
-          <resourceGroup>hmicroprofile</resourceGroup>
+          <resourceGroup>microprofile</resourceGroup>
           <appName>helidon-hello-azure-1591663020899</appName>
           <pricingTier>P1v2</pricingTier>
           <region>japaneast</region>
