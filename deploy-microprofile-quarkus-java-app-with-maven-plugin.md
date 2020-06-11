@@ -220,9 +220,9 @@ In this section, you will configure the Quarkus project `pom.xml` so that Maven 
 
 1. 	 Added a following entry to properties file (`src/main/resources/application.properties`) to create the Uber (FAT) jar.
    
-	```text	
+	`	
 	quarkus.package.uber-jar=true
-	```
+	`
 
 
 ## Deploy the app to Azure
