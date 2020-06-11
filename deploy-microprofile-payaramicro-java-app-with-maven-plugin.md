@@ -40,8 +40,6 @@ Follow the instructions to complete the sign-in process.
 
 In this section, you will create a PayaraMicro application and test it locally.
 
-### Create Java SE 8 base Project
-
 1. Open Web Browser and acccess to the [MicroProfile Starter](https://start.microprofile.io/) site.
 ![](./media/PayaraMicro/microprofile-starter-PayaraMicro.png)
 
