@@ -213,12 +213,6 @@ In this section, you will configure the KumuluzEE project `pom.xml` so that Mave
       </plugin>
    ```
 
-1. 	 Added a following entry to properties file (`src/main/resources/application.properties`) to create the Uber (FAT) jar.
-
-	`	
-	KumuluzEE.package.uber-jar=true
-	`
-
 
 ## Deploy the app to Azure
 
