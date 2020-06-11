@@ -47,17 +47,17 @@ In this section, you will create a Quarkus application and test it locally.
 
 1. Input or Select the field like follows.  
 
-|  Input Field  |  Input/Select Value  |
-| ---- | ---- |
-|  groupId  |  com.microsoft.azure.samples.quarkus  |
-|  artifactId  |  quarkus-hello-azure  |
-|  MicroProfile Version  |  MP 3.2  |
-|  Java SE Version  |  Javav 11  |
-|  MicroProfile Runtime  |  Quarkus  |
-|  Examples for Specifications  |  Metrics, OpenAPI  |
-
-1. Download the project  
-Push the `DOWNLOAD` button.
+	|  Input Field  |  Input/Select Value  |
+	| ---- | ---- |
+	|  groupId  |  com.microsoft.azure.samples.quarkus  |
+	|  artifactId  |  quarkus-hello-azure  |
+	|  MicroProfile Version  |  MP 3.2  |
+	|  Java SE Version  |  Javav 11  |
+	|  MicroProfile Runtime  |  Quarkus  |
+	|  Examples for Specifications  |  Metrics, OpenAPI  |
+	
+	1. Download the project  
+	Push the `DOWNLOAD` button.
 
 1. Unzip the archive file; for exaple:
 
@@ -69,12 +69,12 @@ Push the `DOWNLOAD` button.
 
 In order to create the Java 11 base project, you can execute with following commands:
 
-```
-mvn io.quarkus:quarkus-maven-plugin:1.5.0.Final:create \
-  -DprojectGroupId=com.microsoft.azure.samples.quarkus \
-  -DprojectArtifactId=quarkus-hello-azure  \
-  -DclassName="com.microsoft.azure.samples.quarkus.App"
-```
+	```shell
+	mvn io.quarkus:quarkus-maven-plugin:1.5.0.Final:create \
+	  -DprojectGroupId=com.microsoft.azure.samples.quarkus \
+	  -DprojectArtifactId=quarkus-hello-azure  \
+	  -DclassName="com.microsoft.azure.samples.quarkus.App"
+	```
 
 ### Run the application in Local environment
 
@@ -219,7 +219,7 @@ In this section, you will configure the Quarkus project `pom.xml` so that Maven 
    ```
 
 1. 	 Added a following entry to properties file (`src/main/resources/application.properties`) to create the Uber (FAT) jar.
-   
+
 	`	
 	quarkus.package.uber-jar=true
 	`
