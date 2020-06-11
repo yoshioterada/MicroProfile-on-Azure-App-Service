@@ -218,10 +218,9 @@ In this section, you will configure the Quarkus project `pom.xml` so that Maven 
       </plugin> 
    ```
 
-1. 	 Added a following entry to properties file to create the Uber (FAT) jar
-   `src/main/resources/application.properties`
-
-	```
+1. 	 Added a following entry to properties file (`src/main/resources/application.properties`) to create the Uber (FAT) jar.
+   
+	```text	
 	quarkus.package.uber-jar=true
 	```
 
@@ -257,10 +256,10 @@ Once you have configured all of the settings in the preceding sections of this a
 	```
 
 
-Maven will deploy your web app to Azure; if the web app or web app plan does not already exist, it will be created for you. It might take a few minutes before the web app is visible at the URL shown in the output. Navigate to the URL in a Web browser.  You should see the following screen.
-
-
-![](./media/Quarkus/Quarkus-front-page-11.png)
+	Maven will deploy your web app to Azure; if the web app or web app plan does not already exist, it will be created for you. It might take a few minutes before the web app is visible at the URL shown in the output. Navigate to the URL in a Web browser.  You should see the following screen.
+	
+	
+	![](./media/Quarkus/Quarkus-front-page-11.png)
 
 When your web has been deployed, you will be able to manage it through the [Azure portal].
 
@@ -268,13 +267,10 @@ When your web has been deployed, you will be able to manage it through the [Azur
 
    ![Web app listed in Azure portal App Services](./media/Quarkus/Quarkus-Azure-Portal-rg.png)
 
-* And you can access to your web app by click the `Browse` button in the **Overview** for your web app:
+* And you can access to your web app by click the `Browse` button in the **Overview** for your web app.  
+Verify that the deployment was successful and Running. You should see the following screen displayed: 
 
    ![Find the URL for your web app in Azure portal App Services](./media/Quarkus/Quarkus-Azure-Portal-manage.png)
-
-* Verify that the deployment was successful You should see the following screen displayed: 
-
-	![](./media/Quarkus/Quarkus-front-page-11.png)
 
 
 ## Clean up resources
