@@ -103,16 +103,16 @@ In this section, you will configure the KumuluzEE project `pom.xml` so that Mave
 2. In the `<build>` section of the pom.xml, add the following `<plugin>` entry inside the `<plugins>` tag.
 
 	```xml
-<build>
-  <finalName>kumuluzEE-hello-azure</finalName>
-  <plugins>
-    <plugin>
-      <groupId>com.microsoft.azure</groupId>
-      <artifactId>azure-webapp-maven-plugin</artifactId>
-      <version>1.9.1</version>
-    </plugin>
-  </plugins>
-</build>
+	<build>
+	  <finalName>kumuluzEE-hello-azure</finalName>
+	  <plugins>
+	    <plugin>
+	      <groupId>com.microsoft.azure</groupId>
+	      <artifactId>azure-webapp-maven-plugin</artifactId>
+	      <version>1.9.1</version>
+	    </plugin>
+	  </plugins>
+	</build>
 	```
 
 3. Then you can configure the deployment, run the following maven command in the Command Prompt and use the **number** to choose these options in the prompt:
