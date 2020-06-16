@@ -22,7 +22,7 @@ To complete the steps in this tutorial, you'll need to have the following instal
 
 * The [Azure CLI](/cli/azure/), either locally or through [Azure Cloud Shell](https://shell.azure.com).
 * A supported Java Development Kit (JDK). For more information about the JDKs available for use when developing on Azure, see <https://aka.ms/azure-jdks>.
-* Apache's [Maven](https://maven.apache.org/), Version 3).
+* Apache [Maven](https://maven.apache.org/), version 3.
 
 ## Install and sign in to Azure CLI
 
@@ -89,7 +89,7 @@ mvn io.quarkus:quarkus-maven-plugin:1.5.0.Final:create \
    mvn quarkus:dev
    ```
 
-1. Test the web app by browsing to it locally using a web browser. For example, you could use the following command if you have curl available:
+1. Test the web application by browsing to it locally using a web browser. For example, you could use the following command if you have curl available:
 	For Java SE 8 Project:
 
    ```shell
@@ -225,7 +225,7 @@ In this section, you will configure the Quarkus project `pom.xml` so that Maven 
 
 ## Deploy the app to Azure
 
-Once you have configured all of the settings in the preceding sections of this article, you are ready to deploy your web app to Azure. To do so, use the following steps:
+Once you have configured all of the settings in the preceding sections of this article, you are ready to deploy your web application to Azure. To do so, use the following steps:
 
 1. From the command prompt or terminal window that you were using earlier, rebuild the JAR file using Maven if you made any changes to the *pom.xml* file; for example:
 
@@ -254,24 +254,25 @@ Once you have configured all of the settings in the preceding sections of this a
 	```
 
 
-	Maven will deploy your web app to Azure; if the web app or web app plan does not already exist, it will be created for you. It might take a few minutes before the web app is visible at the URL shown in the output. Navigate to the URL in a Web browser.  You should see the following screen.
+	Maven will deploy your web appplication to Azure; if the web appplication or web appplication plan does not already exist, it will be created for you. It might take a few minutes before the web appplication is visible at the URL shown in the output. Navigate to the URL in a Web browser.  You should see the following screen.
 	
 	
 	![](./media/Quarkus/Quarkus-front-page-11.png)
 
-When your web has been deployed, you will be able to manage it through the [Azure portal].
+When your web appplication has been deployed, you will be able to manage it through the [Azure portal].
 
-* Your web app will be listed in **microprofile** resource group:
+* Your web appplication will be listed in **microprofile** resource group:
 
    ![Web app listed in Azure portal App Services](./media/Quarkus/Quarkus-Azure-Portal-rg.png)
 
-* And you can access to your web app by click the `Browse` button in the **Overview** for your web app.  
+* And you can access to your web appplication by click the `Browse` button in the **Overview** for your web app.  
 Verify that the deployment was successful and Running. You should see the following screen displayed: 
 
    ![Find the URL for your web app in Azure portal App Services](./media/Quarkus/Quarkus-Azure-Portal-manage.png)
 
 
 ## Clean up resources
+
 When the Azure resources are no longer needed, clean up the resources you deployed by deleting the resource group.
 
 - From the Azure portal, select Resource group from the left menu.
